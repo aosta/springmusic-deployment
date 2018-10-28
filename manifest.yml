@@ -4,13 +4,11 @@ name: spring-music-demo
 releases:
 - name: spring-music
   version: latest
-- name: nginx
-  version: latest
-- name: garden-runc
+- name: "garden-runc"
   version: latest
 
 stemcells:
-- os: ubuntu-trusty
+- os: ubuntu-xenial
   alias: default
   version: latest
 
@@ -19,15 +17,6 @@ instance_groups:
   jobs:
     - name: spring-music
       release: spring-music
-  instances: 3
-  stemcell: default
-  azs: [z1,z2,z3]
-  vm_type: default
-  persistent_disk_type: default
-  networks:
-  - name: default
-
-- name: rproxy
   instances: 1
   stemcell: default
   azs: [z1]
@@ -35,10 +24,6 @@ instance_groups:
   persistent_disk_type: default
   networks:
   - name: default
-    static_ips: [10.244.0.119]
-  jobs:
-    - name: nginx
-      release: nginx
 
 update:
   canaries: 1

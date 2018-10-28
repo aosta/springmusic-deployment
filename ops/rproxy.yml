@@ -1,0 +1,21 @@
+- type: replace
+  path: /releases/-
+  value:
+    name: nginx
+    version: latest
+
+- type: replace
+  path: /instance_groups/name=rproxy?
+  value:
+    name: rproxy
+    instances: 1
+    stemcell: default
+    azs:
+      - z1
+    vm_type: default
+    persistent_disk_type: default
+    networks:
+      - name: default
+    jobs:
+      - name: nginx
+        release: nginx
