@@ -4,12 +4,10 @@ name: spring-music-demo
 releases:
 - name: spring-music
   version: latest
-- name: "garden-runc"
-  version: latest
 
 stemcells:
-- os: ubuntu-xenial
-  alias: default
+- alias: default
+  os: ubuntu-xenial
   version: latest
 
 instance_groups:
