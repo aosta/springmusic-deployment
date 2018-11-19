@@ -1,13 +1,13 @@
 # Spring Music Deployment
 
-The default manifest is for deploying to a BOSH-Lite on Virtualbox.  
+The default manifest is for deploying to a BOSH(Lite) on Virtualbox.  
 There is a bunch of BOSH operations files included to 'patch' the deployment for
 deploying to other IaaS.
 
 If you look at the `ops/` directory you should be able to determine what operations files to include if you want to deploy to other IaaS's.
 
 
-## Deplying to BOSH-Lite on Virtualbox
+## Deploying to BOSH(Lite) on Virtualbox
 
 This assumes you have followed my [workshop](https://bosh.valueline.io/bootstrap-bosh-director/workstation/intro/) on bootstrapping a BOSH director on your workstaiton.
 
