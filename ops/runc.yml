@@ -1,7 +1,0 @@
----
-
-- type: replace
-  path: /releases/-
-  value:
-    name: "garden-runc"
-    version: latest
