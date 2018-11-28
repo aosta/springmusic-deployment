@@ -3,7 +3,11 @@ name: spring-music-demo
 
 releases:
 - name: spring-music
-  version: latest
+  version: 0.0.1
+  sha1: 339fe42598be3197d5dd27c273a5c9cd6e5cd346
+  url: https://github.com/aosta/spring-music-boshrelease/releases/download/v0.0.1/spring-music-0.0.1.tgz
+- name: "garden-runc"
+  version: "latest"
 
 stemcells:
 - alias: default
@@ -17,7 +21,8 @@ instance_groups:
       release: spring-music
   instances: 1
   stemcell: default
-  azs: [z1]
+  azs:
+    - z1
   vm_type: default
   persistent_disk_type: default
   networks:
