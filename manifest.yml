@@ -4,12 +4,8 @@ name: spring-music-demo
 releases:
 - name: spring-music
   version: 0.0.1
-  sha1: 339fe42598be3197d5dd27c273a5c9cd6e5cd346
+  sha1: 3efddc129390088c32a7596f57988fc4bbf1d895
   url: https://github.com/aosta/spring-music-boshrelease/releases/download/v0.0.1/spring-music-0.0.1.tgz
-- name: garden-runc
-  version: 1.17.1
-  url: https://bosh.io/d/github.com/cloudfoundry/garden-runc-release?v=1.17.1
-  sha1: b04bf5dd078180c10a31b5422c7b7f7ff80b37ec
 
 stemcells:
 - alias: default
